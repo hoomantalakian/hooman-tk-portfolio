@@ -31,3 +31,10 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* ====== Custom Classes ====== */
+
+.bold-span {
+  @apply bg-yellow-400 font-extrabold text-4xl
+}
