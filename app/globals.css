@@ -36,5 +36,5 @@ body {
 /* ====== Custom Classes ====== */
 
 .bold-span {
-  @apply bg-yellow-400 font-extrabold text-4xl
+  @apply font-extrabold text-4xl text-primary-light
 }

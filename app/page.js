@@ -1,43 +1,44 @@
+"use client";
 import Image from "next/image";
-import Link from "next/link";
-
+//
 export default function Home() {
+	//
 	return (
 		<div id="whole-page">
-			<header className="fixed top-0 w-full py-5 bg-gray-700">
-				<ul id="navbar" className="flex w-fit m-auto gap-5">
-					<li>
-						<Link href="/">Home</Link>{" "}
-					</li>
-					<li>
-						<Link href="/portfolio">Portfolio</Link>{" "}
-					</li>
-				</ul>
-			</header>
+			{/* Header */}
 			<main className="mx-[10rem] mt-[8em]">
-				<section id="banner" className="flex gap-8">
+				{/* Banner */}
+				<section id="banner" className="flex gap-8 justify-center items-center">
 					<Image
 						src="/my-face.jpg"
 						alt="my face"
 						width={500}
 						height={500}
+						className="-z-10  border-[5px] border-primary-medium"
 					></Image>
+					{/* Text Box */}
 					<div id="banner_text" className="flex flex-col">
 						<h1 id="my-name" className="mb-5">
 							I&apos;m{" "}
-							<span className="font-extrabold text-9xl">
+							<span className="text-9xl font-extrabold text-gray-200">
 								Hooman Talakian,
 							</span>
 						</h1>
 						<p>
-							A <span className="bold-span">Music Producer</span>, Educator, Programmer and creative
-							Leader.
+							a professional{" "}
+							<span className="bold-span">Music Producer</span>, a
+							dedicated{" "}
+							<span className="bold-span">Educator</span>, a
+							focused{" "}
+							<span className="bold-span">Programmer</span> and
+							flexible{" "}
+							<span className="bold-span">Creative Leader</span>.
 						</p>
-						<p>
-							I transform ideas into music, guide others in
-							mastering their craft, and innovate within the world
-							of sound.
-						</p>
+						{/* <p className="mt-5">
+							I transform ideas into music/vision/code, guide
+							others in mastering their craft, and innovate within
+							the world of possibilities!
+						</p> */}
 					</div>
 				</section>
 			</main>
