@@ -16,7 +16,7 @@ export default function Home() {
 					alt="my face"
 					width={500}
 					height={500}
-					className="max-w-full w-[20rem] lg:w-[30rem] border-[4px] border-primary-medium shrink"
+					className="max-w-full w-[20rem] lg:w-[30rem] border-[4px] border-primary-medium "
 				></Image>
 				{/* Text Box */}
 				<div
