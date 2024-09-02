@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import CtHeader from "@/components/Header";
+import CtHeader from "@/components/CtHeader";
+import CtFooter from "@/components/CtFooter";
 //
 const inter = Inter({ subsets: ["latin"] });
 //
@@ -15,9 +16,7 @@ export default function RootLayout({ children }) {
 			<body className={`${inter.className} text-gray-200`}>
 				<CtHeader />
 				{children}
-				<footer className="bg-primary-dark py-2 w-full text-primary-medium text-center">
-					Hooman Talakian 2024
-				</footer>
+				<CtFooter />
 			</body>
 		</html>
 	);
